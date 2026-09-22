@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Image Gallery</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>My Image Gallery</h1>
+
+    <div class="gallery">
+
+        <div class="gallery-item">
+            <img src="https://picsum.photos/id/1015/600/400"
+                 alt="Mountain"
+                 onclick="openLightbox(0)">
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://picsum.photos/id/1016/600/400"
+                 alt="Nature"
+                 onclick="openLightbox(1)">
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://picsum.photos/id/1025/600/400"
+                 alt="Dog"
+                 onclick="openLightbox(2)">
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://picsum.photos/id/1035/600/400"
+                 alt="River"
+                 onclick="openLightbox(3)">
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://picsum.photos/id/1043/600/400"
+                 alt="Forest"
+                 onclick="openLightbox(4)">
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://picsum.photos/id/1069/600/400"
+                 alt="Beach"
+                 onclick="openLightbox(5)">
+        </div>
+
+    </div>
+
+
+    <!-- Lightbox -->
+
+    <div id="lightbox" class="lightbox">
+
+        <button class="close" onclick="closeLightbox()">
+            &times;
+        </button>
+
+        <button class="prev" onclick="previousImage()">
+            &#10094;
+        </button>
+
+        <img id="lightbox-image" src="" alt="Large image">
+
+        <button class="next" onclick="nextImage()">
+            &#10095;
+        </button>
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
